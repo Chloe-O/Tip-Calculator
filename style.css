@@ -69,6 +69,9 @@ body #calculator-container .flex-wrap .left .tip-btns input {
   padding: 5px 10px;
   font-size: 25px;
 }
+body #calculator-container .flex-wrap .left .tip-btns input::placeholder {
+  color: #a3baba;
+}
 body #calculator-container .flex-wrap .left input {
   background: #f3f8fb;
   border: none;

@@ -84,8 +84,13 @@ body {
           input {
             padding: 5px 10px;
             font-size: 25px;
+
+            &::placeholder {
+              color: $grey;
+            }
           }
         }
+
         input {
           background: $light-grey;
           border: none;

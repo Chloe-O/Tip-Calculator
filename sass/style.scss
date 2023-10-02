@@ -7,6 +7,7 @@ $grey: #a3baba;
 $accent: #2bc1af;
 
 // Fonts
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
 * {
   padding: 0;
@@ -24,6 +25,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Space Mono", "Courier New", monospace;
 
   #calculator-container {
     position: relative;
@@ -56,7 +58,7 @@ body {
             font-size: 20px;
 
             &:hover {
-                cursor: pointer;
+              cursor: pointer;
             }
           }
 
@@ -72,6 +74,35 @@ body {
         background: $primary;
         border-radius: 20px;
         padding: 30px;
+
+        .tip,
+        .total {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          p {
+            color: #fff;
+
+            span {
+              display: block;
+              color: hsl(185, 41%, 84%);
+              font-size: 12px;
+            }
+          }
+
+          .tip-amount,
+          .total-amount {
+            color: $accent;
+            font-size: 40px;
+            font-weight: 700;
+          }
+
+          #tip-amount,
+          #total-amount {
+            display: inline-block;
+          }
+        }
       }
     }
   }

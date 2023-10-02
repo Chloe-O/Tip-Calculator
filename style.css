@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Space Mono", "Courier New", monospace;
 }
 body #calculator-container {
   position: relative;
@@ -54,6 +56,36 @@ body #calculator-container .flex-wrap .right {
   background: #00474b;
   border-radius: 20px;
   padding: 30px;
+}
+body #calculator-container .flex-wrap .right .tip,
+body #calculator-container .flex-wrap .right .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body #calculator-container .flex-wrap .right .tip p,
+body #calculator-container .flex-wrap .right .total p {
+  color: #fff;
+}
+body #calculator-container .flex-wrap .right .tip p span,
+body #calculator-container .flex-wrap .right .total p span {
+  display: block;
+  color: hsl(185, 41%, 84%);
+  font-size: 12px;
+}
+body #calculator-container .flex-wrap .right .tip .tip-amount,
+body #calculator-container .flex-wrap .right .tip .total-amount,
+body #calculator-container .flex-wrap .right .total .tip-amount,
+body #calculator-container .flex-wrap .right .total .total-amount {
+  color: #2bc1af;
+  font-size: 40px;
+  font-weight: 700;
+}
+body #calculator-container .flex-wrap .right .tip #tip-amount,
+body #calculator-container .flex-wrap .right .tip #total-amount,
+body #calculator-container .flex-wrap .right .total #tip-amount,
+body #calculator-container .flex-wrap .right .total #total-amount {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */
